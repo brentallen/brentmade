@@ -1,0 +1,59 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.btn-default{
+   background-color: #1b976b;
+   color: white;
+}
+
+.page-titles{
+    font-family: Montserrat;
+}
+
+.fontsy{
+    font-family: Montserrat;
+    display: inline;
+    position: relative;
+    top: 30px;
+}
+
+.fontsy-two{
+    
+    font-family: 'Hind Vadodara', sans-serif;
+    color: white;
+    display: inline;
+}
+
+.fonter{
+    font-family: 'Hind Vadodara', sans-serif;
+    color: black !important;
+    display: inline;
+    
+}
+
+.move-down{
+    
+    position: relative;
+    top: 60px;
+    
+}
+
+.poppy{
+    font-family: Montserrat;
+}
+
+.navbar {
+  background-color: rgba(0,0,0,0);
+  border-bottom: 1px solid rgba(255,255,255,0.0);
+}
+
+ul.nav a:hover{
+  color: black !important;
+}
+
+
+
+.me{
+    height: 306px;
+    width: 459px;
+}

@@ -4,11 +4,38 @@
   <title>Brentmade</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind+Vadodara' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class='container'>
+    <div class="navbar-header" style="padding-top: 2px;">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="main-nav-collapse">
+      <ul class="nav navbar-nav navbar-right">
+         <li><%= link_to "ABOUT", about_path, {:style=> "font-family: Hind Vadodara;"} %></li>
+         <li><%= link_to "WORK", work_path, {:style=> "font-family: Hind Vadodara;"} %> </li>
+         <li><%= link_to "SKILLS", skills_path, {:style=> "font-family: Hind Vadodara;"} %> </li>
+         <li><%= link_to "SOCIAL", root_path, {:style=> "font-family: Hind Vadodara;"} %> </li>
+         <li><%= link_to "CONTACT", root_path, {:style=> "font-family: Hind Vadodara;"} %> </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+  
+</nav>
 
-<%= yield %>
+<div class="container">
+  <%= yield %>
+</div>
 
 </body>
 </html>
