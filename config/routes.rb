@@ -2,6 +2,14 @@ Rails.application.routes.draw do
   get '/skills' => 'pages#skills'
   get '/work' => 'pages#work'
   get '/about' => 'pages#about'
+  get '/social' => 'pages#social'
+  get '/contact' => 'pages#contact'
+  get '/devmatch' => 'pages#devmatch'
+  get '/recipesbox' => 'pages#recipesbox'
+  get '/wiki' => 'pages#wiki'
+  get '/fantasyblurb' => 'pages#fantasyblurb'
+  get '/swellseo' => 'pages#swellseo'
+
   root 'pages#home'
   
   # The priority is based upon order of creation: first created -> highest priority.

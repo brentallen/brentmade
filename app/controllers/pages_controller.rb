@@ -12,7 +12,7 @@ class PagesController < ApplicationController
     def skills
     end
     
-    def blog
+    def social
     end
 
 end
