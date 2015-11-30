@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  
+  resources :contacts
   get '/skills' => 'pages#skills'
   get '/work' => 'pages#work'
   get '/about' => 'pages#about'

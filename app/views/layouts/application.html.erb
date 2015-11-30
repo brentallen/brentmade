@@ -27,7 +27,7 @@
          <li><%= link_to "WORK", work_path, {:style=> "font-family: Hind Vadodara;"} %> </li>
          <li><%= link_to "SKILLS", skills_path, {:style=> "font-family: Hind Vadodara;"} %> </li>
          <li><%= link_to "SOCIAL", social_path, {:style=> "font-family: Hind Vadodara;"} %> </li>
-         <li><%= link_to "CONTACT", contact_path, {:style=> "font-family: Hind Vadodara;"} %> </li>
+         <li><%= link_to "CONTACT", new_contact_path, {:style=> "font-family: Hind Vadodara;"} %> </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
@@ -35,6 +35,11 @@
 </nav>
 
 <div class="container">
+  
+  <% flash.each do |key, value| %>
+  <%= content_tag :div, value, class: "alert alert-#{key}" %>
+  <% end %>
+    
   <%= yield %>
 </div>
 
