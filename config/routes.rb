@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/recipesbox' => 'pages#recipesbox'
   get '/wiki' => 'pages#wiki'
   get '/fantasyblurb' => 'pages#fantasyblurb'
+  get '/stuckvehicle' => 'pages#stuckvehicle'
   get '/swellseo' => 'pages#swellseo'
 
   root 'pages#home'
